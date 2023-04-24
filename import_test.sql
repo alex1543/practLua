@@ -2,6 +2,8 @@
 
 CREATE DATABASE test;
 
+USE test;
+
 CREATE TABLE files (
   id_file int(11) NOT NULL,
   id_my int(11) NOT NULL,

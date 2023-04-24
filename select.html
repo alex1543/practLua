@@ -75,13 +75,21 @@ input[type="text"] {
 	font-style: italic;
 }
 	</style>
+    <script>
+      function submitForm() {
+        const frm = document.getElementById("submit");
+        frm.submit(); // Submit the form
+        frm.reset();  // Reset all form data
+        return true; // Prevent page refresh
+      }
+    </script>
     <body>
         <h1><a href=".">Как можно работать с таблицами в MySQL на Lua</a></h1>
         <form action="." method="get">
-            <label>Значение</label><div> 1: </div><input type="text" name="col1" value="Первый ..." />
-            <label>Значение</label><div> 2: </div><input type="text" name="col2" value="Второй параметр" />
-            <label>Значение</label><div> 3: </div><input type="text" name="col3" value="Третий пара..." />
-            <input type="submit" value="Добавить" />
+            <label>Значение</label><div> 1: </div><input type="text" name="col1" placeholder="Первый параметр..." />
+            <label>Значение</label><div> 2: </div><input type="text" name="col2" placeholder="Второй параметр..." />
+            <label>Значение</label><div> 3: </div><input type="text" name="col3" placeholder="Третий параметр..." />
+            <input id="submit" type="submit" value="Добавить" onclick="submitForm()" />
         </form>
 		<br />
 		<table>

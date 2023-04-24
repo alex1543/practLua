@@ -1,1 +1,1 @@
-lua C:\xampp\htdocs\practLua\http_server.lua
+lua http_server.lua
