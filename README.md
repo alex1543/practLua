@@ -7,4 +7,4 @@
 
 Пример не требует Apache. Достаточно базовых компонентов, которые есть в LuaForWindows_v5.1.4-46.exe (https://code.google.com/archive/p/luaforwindows/). Для работы с базой данных test необходимо экспортировать таблицы из файла import_test.sql в каталоге с исходниками.
 
-Для запуска сервера на lua (на модуле socket с luasql), нужно запустить файл serv.bat и открыть страницу: http://localhost:8080/
+Для запуска сервера на lua (на модуле socket с luasql), нужно запустить файл serv.bat и открыть страницу: http://localhost:8880/
